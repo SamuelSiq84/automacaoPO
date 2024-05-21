@@ -11,4 +11,7 @@ public class ProdutoMap extends BasePage {
     }
     @FindBy(xpath = "//a[contains(text(), ' Products')]")
     public WebElement btnProdutos;
+
+    @FindBy(xpath = "//*[@id=dismiss-button]")
+    public WebElement fecharPopUp;
 }

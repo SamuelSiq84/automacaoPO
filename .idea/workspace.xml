@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b338425b-daf8-462b-922c-be849a79fb16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/map/HomeMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/map/ProdutoMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/HomeStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/ProdutoStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/map/LoginMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/map/LoginMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/map/ProdutoMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/map/ProdutoMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ProdutoStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ProdutoStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/WebTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +55,7 @@
     "Gradle.LoginTests.acessarHomePage.executor": "Run",
     "Gradle.LoginTests.acessarProduto.executor": "Run",
     "Gradle.LoginTests.realizarLogin.executor": "Run",
+    "Gradle.WebTests.acessarProduto.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "feature__reformular",
@@ -67,7 +63,7 @@
     "onboarding.tips.debug.path": "/home/sam_robot/IdeaProjects/automacaoPO/src/main/java/org/example/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.LoginTests.acessarHomeLogin">
+  <component name="RunManager" selected="Gradle.WebTests.acessarProduto">
     <configuration name="LoginTests.acessarHomeLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -164,8 +160,33 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="WebTests.acessarProduto" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;test.WebTests.acessarProduto&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WebTests.acessarProduto" />
         <item itemvalue="Gradle.LoginTests.acessarHomeLogin" />
         <item itemvalue="Gradle.LoginTests.acessarProduto" />
         <item itemvalue="Gradle.LoginTests.acessarHomePage" />

@@ -52,7 +52,7 @@ public class WebTests {
     }
     @AfterEach
     public void tearDown(){
-        driver.quit();
+        //driver.quit();
     }
 
 
