@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b338425b-daf8-462b-922c-be849a79fb16" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/map/HomeMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/map/ProdutoMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/HomeStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/ProdutoStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/map/LoginMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/map/LoginMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +43,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2gjlHCdYiZtdZO4MailEQOoplj2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -51,6 +58,7 @@
   "keyToString": {
     "Gradle.LoginTests.acessarHomeLogin.executor": "Run",
     "Gradle.LoginTests.acessarHomePage.executor": "Run",
+    "Gradle.LoginTests.acessarProduto.executor": "Run",
     "Gradle.LoginTests.realizarLogin.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -108,6 +116,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="LoginTests.acessarProduto" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;test.LoginTests.acessarProduto&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="LoginTests.realizarLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -135,6 +167,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.LoginTests.acessarHomeLogin" />
+        <item itemvalue="Gradle.LoginTests.acessarProduto" />
         <item itemvalue="Gradle.LoginTests.acessarHomePage" />
         <item itemvalue="Gradle.LoginTests.realizarLogin" />
       </list>

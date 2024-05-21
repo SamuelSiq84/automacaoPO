@@ -20,4 +20,6 @@ public class LoginMap extends BasePage {
 
     @FindBy(xpath = "//button[contains(text(), 'Login')]")
     public WebElement submit;
+
+
 }

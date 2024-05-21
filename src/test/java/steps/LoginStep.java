@@ -11,11 +11,6 @@ public class LoginStep extends LoginMap {
         super(driver);
     }
 
-    public LoginStep acessarHomePage(String url){
-        driver.get(url);
-        return this;
-    }
-
     public LoginStep acessarLoginHome(){
         btnLogin.click();
         return this;
@@ -26,6 +21,7 @@ public class LoginStep extends LoginMap {
         submit.click();
         return this;
     }
+
 
 
 }
