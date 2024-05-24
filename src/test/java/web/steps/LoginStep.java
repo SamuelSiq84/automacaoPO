@@ -1,7 +1,6 @@
-package steps;
+package web.steps;
 
-import map.LoginMap;
-import org.openqa.selenium.By;
+import web.map.LoginMap;
 import org.openqa.selenium.WebDriver;
 
 public class LoginStep extends LoginMap {

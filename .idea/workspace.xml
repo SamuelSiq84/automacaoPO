@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b338425b-daf8-462b-922c-be849a79fb16" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/web/commons/ScrollPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/web/steps/ProdutoStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/map/ProdutoMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/map/ProdutoMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ProdutoStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ProdutoStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/WebTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/map/HomeMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/map/HomeMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/map/LoginMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/map/LoginMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/map/ProdutoMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/map/ProdutoMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/HomeStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/steps/HomeStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/steps/LoginStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ProdutoStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/WebTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +43,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SamuelSiq84&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SamuelSiq84/automacaoPO.git&quot;,
+    &quot;accountId&quot;: &quot;ee8bd898-e7c1-45fa-b369-bd693dbf9095&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -51,10 +71,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Download Sources.executor": "Run",
     "Gradle.LoginTests.acessarHomeLogin.executor": "Run",
     "Gradle.LoginTests.acessarHomePage.executor": "Run",
     "Gradle.LoginTests.acessarProduto.executor": "Run",
     "Gradle.LoginTests.realizarLogin.executor": "Run",
+    "Gradle.WebTests.acessarHomeLogin.executor": "Run",
+    "Gradle.WebTests.acessarProduto (1).executor": "Run",
     "Gradle.WebTests.acessarProduto.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -63,7 +86,7 @@
     "onboarding.tips.debug.path": "/home/sam_robot/IdeaProjects/automacaoPO/src/main/java/org/example/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.WebTests.acessarProduto">
+  <component name="RunManager" selected="Gradle.WebTests.acessarProduto (1)">
     <configuration name="LoginTests.acessarHomeLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -78,30 +101,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;test.LoginTests.acessarHomeLogin&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginTests.acessarHomePage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;test.LoginTests.acessarHomePage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -136,7 +135,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.realizarLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WebTests.acessarHomeLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -149,7 +148,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;test.LoginTests.realizarLogin&quot;" />
+            <option value="&quot;test.WebTests.acessarHomeLogin&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="WebTests.acessarProduto (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;web.WebTests.acessarProduto&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WebTests.acessarProduto (1)" />
         <item itemvalue="Gradle.WebTests.acessarProduto" />
+        <item itemvalue="Gradle.WebTests.acessarHomeLogin" />
         <item itemvalue="Gradle.LoginTests.acessarHomeLogin" />
         <item itemvalue="Gradle.LoginTests.acessarProduto" />
-        <item itemvalue="Gradle.LoginTests.acessarHomePage" />
-        <item itemvalue="Gradle.LoginTests.realizarLogin" />
       </list>
     </recent_temporary>
   </component>

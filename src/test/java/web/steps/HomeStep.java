@@ -1,6 +1,6 @@
-package steps;
+package web.steps;
 
-import map.HomeMap;
+import web.map.HomeMap;
 import org.openqa.selenium.WebDriver;
 
 public class HomeStep extends HomeMap {

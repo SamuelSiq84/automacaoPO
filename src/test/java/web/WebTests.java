@@ -1,14 +1,20 @@
-package test;
+package web;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import steps.HomeStep;
-import steps.LoginStep;
-import steps.ProdutoStep;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import web.commons.ScrollPage;
+import web.steps.HomeStep;
+import web.steps.LoginStep;
+import web.steps.ProdutoStep;
 
 import java.time.Duration;
 
@@ -17,6 +23,9 @@ import java.time.Duration;
 public class WebTests {
 
     public WebDriver driver;
+    ProdutoStep produtoStep = new ProdutoStep(driver);
+
+
 
     @BeforeEach
     public void Setup(){
@@ -47,12 +56,15 @@ public class WebTests {
 
         ProdutoStep produtoStep = new ProdutoStep(driver);
         produtoStep
-                .acessarProdutoHome();
-
+                .acessarProdutoHome()
+                .iframeAd()
+                .buscarProdutoPorNome("Sleeveless Dress");
+        Assert.assertEquals(driver.findElement(By.xpath("//h2[contains(text(), 'Sleeveless Dress')]"))
+                .isDisplayed(),true,"Realizado busca pela descrição do produto com sucesso");
     }
     @AfterEach
     public void tearDown(){
-        //driver.quit();
+        driver.quit();
     }
 
 

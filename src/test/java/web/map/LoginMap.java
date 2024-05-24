@@ -1,9 +1,9 @@
-package map;
+package web.map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import test.BasePage;
+import web.BasePage;
 
 public class LoginMap extends BasePage {
     public LoginMap(WebDriver driver) {
@@ -20,6 +20,9 @@ public class LoginMap extends BasePage {
 
     @FindBy(xpath = "//button[contains(text(), 'Login')]")
     public WebElement submit;
+
+    @FindBy(xpath = "//iframe[@title='Blank']")
+    public WebElement iframeAd;
 
 
 }
