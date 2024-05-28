@@ -1,12 +1,12 @@
 package web;
 
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -27,20 +27,21 @@ public class WebTests {
     HomeStep homeStep;
     ProdutoStep produtoStep;
     LoginStep loginStep;
-
-
+    ProdutoMap produtoMap;
 
     @BeforeEach
     public void Setup(){
+
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
-        ProdutoStep produtoStep = new ProdutoStep(driver);
-        HomeStep homeStep = new HomeStep(driver);
+
+        produtoStep = new ProdutoStep(driver);
+        homeStep = new HomeStep(driver);
+        produtoMap = new ProdutoMap(driver);
     }
 
     @Test
-    @DisplayName("Realizar Login pela Home Page")
     public void acessarHomeLogin(){
 
         homeStep
@@ -50,7 +51,6 @@ public class WebTests {
                 .acessarComUsuarioValido();
     }
     @Test
-    @DisplayName("Realizar busca de produto por descrição")
     public void acessarProduto(){
 
         homeStep
@@ -64,7 +64,6 @@ public class WebTests {
                 .isDisplayed(),true,"Realizado busca pela descrição do produto com sucesso");
     }
     @Test
-    @DisplayName("Realizar busca por descrição produto adicionando ao carrinho")
     public void adicionarProdutoCarrinho(){
 
         homeStep
@@ -76,11 +75,11 @@ public class WebTests {
                 .clicarAddCarrinho()
                 .validarPopAddCar();
 
-        Assert.assertEquals(driver.findElement(By.xpath("//li[contains(text(), 'Shopping Cart')]"))
-                .isDisplayed(),true,"Produto adicionado com sucesso");
+        Assert.assertEquals(wait.until(ExpectedConditions.visibilityOf(produtoMap.lblshopCar))
+                .isDisplayed(),true,"Produto adicionado no carrinho com sucesso");
+
     }
     @Test
-    @DisplayName("Realizar o checkout do pedido")
     public void realizarCheckoutPedido(){
 
         homeStep
@@ -93,8 +92,9 @@ public class WebTests {
                 .validarPopAddCar()
                 .clicarCheckoutCar();
 
-        Assert.assertEquals(driver.findElement(By.xpath("//h4[contains(text(), 'Checkout')]"))
-                .isDisplayed(),true,"Checkout do pedido realizado com sucesso");
+        Assert.assertEquals(wait.until(ExpectedConditions.visibilityOf(produtoMap.lblCheckout))
+                .isDisplayed(),true,"Realizado checkout do pedido com sucesso");
+
     }
     @AfterEach
     public void tearDown(){

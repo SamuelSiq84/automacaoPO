@@ -1,6 +1,7 @@
 package web.steps;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import web.commons.ManipularElementos;
 import web.map.ProdutoMap;
 import org.openqa.selenium.By;
@@ -43,10 +44,9 @@ public class ProdutoStep extends ProdutoMap {
         btnCheckoutCar.click();
     return this;
     }
-//    public ProdutoStep validarCheckoutCar(){
-//        WebElement element = driver.findElement(By.xpath("//h4[contains(text(), 'Checkout')]"));
-//     return this;
-//    }
+//    @FindBy(xpath = "//h4[contains(text(), 'Checkout')]")
+//    public WebElement lblcheckout;
+
 
 
 

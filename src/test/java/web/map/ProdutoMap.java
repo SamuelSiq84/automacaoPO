@@ -33,8 +33,11 @@ public class ProdutoMap extends BasePage {
     @FindBy(xpath = "//a[contains(text(), 'Proceed To Checkout')]")
     public WebElement btnCheckoutCar;
 
-//    @FindBy(xpath = "//h4[contains(text(), 'Checkout')]")
-//    public WebElement lblCheckout;
+    @FindBy(xpath = "//li[contains(text(), 'Shopping Cart')]")
+    public WebElement lblshopCar;
+
+    @FindBy(xpath = "//h4[contains(text(), 'Checkout')]")
+    public WebElement lblCheckout;
 
 
 
