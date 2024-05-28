@@ -24,5 +24,18 @@ public class ProdutoMap extends BasePage {
     @FindBy(xpath = "//i[contains(@class, 'fa fa-plus-square')]")
     public WebElement btnViewProduct;
 
+    @FindBy(xpath = "/html/body/section/div/div/div[2]/div[2]/div[2]/div/span/button")
+    public WebElement addCar;
+
+    @FindBy(xpath = "//u[contains(text(), 'View Cart')]")
+    public WebElement btnViewCar;
+
+    @FindBy(xpath = "//a[contains(text(), 'Proceed To Checkout')]")
+    public WebElement btnCheckoutCar;
+
+//    @FindBy(xpath = "//h4[contains(text(), 'Checkout')]")
+//    public WebElement lblCheckout;
+
+
 
 }
