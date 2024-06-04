@@ -1,8 +1,7 @@
 package web.commons;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import web.BasePage;
 import web.steps.ProdutoStep;
 
@@ -10,6 +9,8 @@ public class ManipularElementos extends BasePage {
     public ManipularElementos(WebDriver driver) {
         super(driver);
     }
+
+
     public ManipularElementos scrollDown(){
         JavascriptExecutor jsExecuter = (JavascriptExecutor) driver;
         jsExecuter.executeScript("window.scrollTo(0,500)");
@@ -19,4 +20,5 @@ public class ManipularElementos extends BasePage {
         driver.switchTo().frame(driver.findElement(By.id("aswift_6")));
         return this;
     }
+
 }

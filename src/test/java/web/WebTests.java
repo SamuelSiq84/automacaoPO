@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import web.commons.ManipularElementos;
 import web.map.ProdutoMap;
 import web.steps.HomeStep;
 import web.steps.LoginStep;
@@ -28,6 +29,7 @@ public class WebTests {
     ProdutoStep produtoStep;
     LoginStep loginStep;
     ProdutoMap produtoMap;
+
 
     @BeforeEach
     public void Setup(){
@@ -59,7 +61,6 @@ public class WebTests {
                 .acessarProdutoHome()
                 .fecharIframeAdd()
                 .buscarProdutoPorNome("Sleeveless Dress");
-
         Assert.assertEquals(driver.findElement(By.xpath("//h2[contains(text(), 'Sleeveless Dress')]"))
                 .isDisplayed(),true,"Realizado busca pela descrição do produto com sucesso");
     }
@@ -77,8 +78,8 @@ public class WebTests {
 
         Assert.assertEquals(wait.until(ExpectedConditions.visibilityOf(produtoMap.lblshopCar))
                 .isDisplayed(),true,"Produto adicionado no carrinho com sucesso");
-
     }
+
     @Test
     public void realizarCheckoutPedido(){
 
@@ -94,11 +95,11 @@ public class WebTests {
 
         Assert.assertEquals(wait.until(ExpectedConditions.visibilityOf(produtoMap.lblCheckout))
                 .isDisplayed(),true,"Realizado checkout do pedido com sucesso");
-
     }
+
     @AfterEach
     public void tearDown(){
-        driver.quit();
+        //driver.quit();
     }
 
 

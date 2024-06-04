@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b338425b-daf8-462b-922c-be849a79fb16" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/web/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/web/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/WebTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/commons/ManipularElementos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/commons/ManipularElementos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/web/map/ProdutoMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/map/ProdutoMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/web/steps/ProdutoStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/steps/ProdutoStep.java" afterDir="false" />
     </list>
@@ -70,7 +69,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature_reformular" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,13 +115,13 @@
     &quot;Gradle.WebTests.realizarCheckoutPedido.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature__reformular&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature__pageObject&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/home/sam_robot/IdeaProjects/automacaoPO/src/main/java/org/example/Main.java&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.WebTests.adicionarProdutoCarrinho">
+  <component name="RunManager" selected="Gradle.WebTests.acessarProduto (1)">
     <configuration name="WebTests.acessarHomeLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -245,11 +244,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WebTests.acessarProduto (1)" />
         <item itemvalue="Gradle.WebTests.adicionarProdutoCarrinho" />
         <item itemvalue="Gradle.WebTests.realizarCheckoutPedido" />
         <item itemvalue="Gradle.WebTests.acessarHomeLogin" />
         <item itemvalue="Gradle.WebTests.adcionarProdutoCarrinho" />
-        <item itemvalue="Gradle.WebTests.acessarProduto (1)" />
       </list>
     </recent_temporary>
   </component>

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import web.BasePage;
+import web.commons.ManipularElementos;
 
 public class ProdutoMap extends BasePage {
     public ProdutoMap(WebDriver driver) {
